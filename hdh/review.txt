@@ -1,0 +1,495 @@
+Loại semaphore nào giới hạn số tiến trình truy cập tài nguyên?
+a. Cờ (latch)
+b. Semaphore đếm
+c. Khóa lặp
+d. Semaphore nhị phân
+Khi nào bit "dirty" được đánh dấu trong bảng trang?
+a. Khi trang bị hoán đổi
+b. Khi trang bị ghi vào
+c. Khi trang chưa được sử dụng
+d. Khi trang chỉ đọc
+Thrashing ảnh hưởng đến hệ thống như thế nào?
+a. Tăng tốc độ CPU
+b. Giảm chuyển ngữ cảnh
+c. Quá nhiều hoán đổi trang làm giảm hiệu suất
+d. Tăng tỉ lệ trúng cache
+Một hệ thống tránh deadlock cần đảm bảo điều gì?
+a. Không có vùng nhớ chia sẻ
+b. Tránh cấp phát tài nguyên nếu vi phạm an toàn
+c. Ngắt bất kỳ tiến trình nào đang chạy
+d. Cho phép tiến trình đợi tài nguyên vô thời hạn
+Trong hệ thống có phân đoạn, lỗi vượt giới hạn (limit) dẫn đến?
+a. I/O exception
+b. Segmentation fault
+c. Deadlock
+d. Stack overflow
+Trong hệ thống phân trang, mục đích của bit tham chiếu là gì?
+a. Phát hiện lỗi logic
+b. Theo dõi việc truy cập vào ổ đĩa
+c. Ghi nhận việc trang có được truy cập gần đây không
+d. Đánh dấu trang bị thay thế
+Tại sao chọn phân đoạn thay vì phân trang?
+a. Giao ánh xạ đơn giản hơn
+b. Giảm lỗi trang
+c. Phân chia logic theo cấu trúc chương trình
+d. Dùng kích thước cố định
+Trong đồng bộ tiến trình, yêu cầu bounded waiting giúp đảm bảo điều gì?
+a. Dữ liệu luôn được ghi vào bộ nhớ
+b. Tiến trình sẽ được vào vùng tới hạn trong thời gian hữu hạn
+c. Không có tiến trình nào bị swap
+d. Có tiến trình luôn chạy
+Điều gì xảy ra khi TLB không trúng (miss)?
+a. Tìm địa chỉ vật lý qua bảng trang
+b. Phát sinh lỗi trang
+c. Thoát tiến trình
+d. Nạp lại từ đĩa
+Trong hệ thống có thu hồi, khi nào tiến trình đang chạy có thể bị tạm dừng?
+a. Khi nó chờ I/O.
+b. Khi có tiến trình ưu tiên cao hơn sẵn sàng.
+c. Khi đĩa bị đầy.
+d. Khi nó kết thúc.
+Cách xử lý deadlock hiệu quả nhất trong thực tế là gì?
+a. Bỏ qua
+b. Khởi động lại hệ thống
+c. Hủy một hoặc nhiều tiến trình liên quan
+d. Tăng gấp đôi RAM
+Tiến trình nào còn trong bảng tiến trình dù đã kết thúc?
+a. Orphan
+b. Zombie
+c. Daemon
+d. Ghost
+Thuật toán nào giải bài toán vùng tới hạn cho hai tiến trình?
+a. Banker của Dijkstra
+b. Peterson
+c. Round Robin
+d. SSTF
+Khi nào hệ thống coi là đang thrashing?
+a. Không có tiến trình nào chạy
+b. Hệ điều hành dành phần lớn thời gian để swap trang
+c. Số lần chuyển ngữ cảnh quá nhiều
+d. Bộ nhớ đầy liên tục
+Điều nào sau đây không phải điều kiện gây deadlock?
+a. Tương hỗ loại trừ
+b. Có thu hồi
+c. Chờ vòng
+d. Giữ và chờ
+Mỗi segment trong bộ nhớ có đặc điểm gì?
+a. Kích thước cố định
+b. Được lưu trong TLB
+c. Có địa chỉ bắt đầu và độ dài
+d. Tồn tại dưới dạng trang
+Phương pháp cấp phát bộ nhớ nào hỗ trợ kích thước tiến trình thay đổi mà không phân trang?
+a. TLB
+b. Stack
+c. Ánh xạ tĩnh
+d. Phân đoạn
+Thành phần nào nạp hệ điều hành vào bộ nhớ khi khởi động?
+a. Stack
+b. Trình liên kết (linker)
+c. Shell
+d. Bootstrap loader
+Thuật toán thay thế trang nào dùng bit tham chiếu để quyết định trang bị thay thế?
+a. Optimal
+b. LRU
+c. FIFO
+d. Clock
+Trong bài toán triết gia ăn tối, deadlock xảy ra khi nào?
+a. Đũa không bao giờ được trả lại
+b. Tất cả triết gia suy nghĩ cùng lúc
+c. Đũa được chia sẻ quá mức
+d. Mỗi triết gia cầm 1 đũa và đợi
+Deadlock được phát hiện bằng cách nào?
+a. Starvation
+b. Trượt nhiều TLB
+c. Vòng lặp trong đồ thị tài nguyên
+d. Nhiều lỗi trang
+Điều gì xảy ra nếu nhiều tiến trình sửa cùng một biến mà không đồng bộ?
+a. Deadlock
+b. Lỗi trang (page fault)
+c. Starvation
+d. Race condition
+Chiến lược nào đảm bảo tất cả trang được tham chiếu định kỳ để tránh thay thế?
+a. FIFO
+b. Đếm tham chiếu
+c. Clock
+d. Random
+Thuật toán nào cho tỉ lệ lỗi trang thấp nhất nếu biết trước tương lai?
+a. Optimal
+b. LRU
+c. FIFO
+d. Clock
+Lỗi nào gây ra segmentation fault?
+a. Ghi vào ổ đĩa chỉ đọc
+b. Cache hit thấp
+c. Truy cập bộ nhớ chưa cấp phát
+d. Truy cập trang bị swap
+Trong thuật toán Peterson, biến “turn” dùng để làm gì?
+a. Theo dõi lỗi trang
+b. Xác định mức sử dụng bộ nhớ
+c. Gán độ ưu tiên
+d. Xác định quyền vào vùng tới hạn
+Đối với vấn đề Producer–Consumer, thành phần nào giúp đồng bộ dữ liệu?
+a. Semaphore đếm
+b. Lệnh exec
+c. Stack
+d. Signal
+Thuật toán Round Robin dùng kỹ thuật nào để ngăn tiến trình chiếm CPU quá lâu?
+a. Tắt ngắt
+b. Aging
+c. Khóa bộ nhớ
+d. Quantum
+Hiện tượng starvation trong lập lịch CPU xảy ra khi nào?
+a. Một tiến trình có độ ưu tiên thấp không bao giờ được cấp CPU.
+b. Một tiến trình bị chặn bởi ngắt phần cứng.
+c. Một tiến trình không thể giải phóng bộ nhớ.
+d. Một tiến trình kết thúc quá nhanh.
+Kỹ thuật quản lý bộ nhớ nào không gây phân mảnh ngoài?
+a. Phân trang
+b. Phân đoạn
+c. Phân vùng động
+d. Cấp phát liên tục
+Thuật toán tránh deadlock nào kiểm tra trạng thái an toàn trước khi cấp phát tài nguyên?
+a. Lập lịch tối ưu
+b. Multilevel Feedback Queue
+c. Banker
+d. Round Robin
+Thuật toán thay thế trang nào loại bỏ trang lâu không được truy cập nhất?
+a. LRU
+b. Clock
+c. Optimal
+d. FIFO
+Điều kiện cần thiết nào của deadlock ngăn việc thu hồi tài nguyên?
+a. Giữ và chờ
+b. Chờ vòng
+c. Không thể thu hồi
+d. Tương hỗ loại trừ
+Trong quản lý tiến trình, trạng thái “waiting” thể hiện điều gì?
+a. Đang chạy trên CPU
+b. Được ưu tiên cao nhất
+c. Tiến trình đã kết thúc
+d. Đang chờ tài nguyên hoặc sự kiện
+Tại sao chỉ phát hiện deadlock là chưa đủ?
+a. Không ngăn deadlock tương lai
+b. Tốn CPU
+c. Mâu thuẫn với phân trang
+d. Không giải phóng tài nguyên
+Vùng swap dùng để làm gì?
+a. Lưu driver
+b. Lưu mật khẩu người dùng
+c. Lưu dữ liệu tạm thời khi RAM đầy
+d. Lưu log hệ thống
+Khác biệt giữa địa chỉ logic và vật lý là gì?
+a. Logic dùng bởi phần cứng
+b. Logic do CPU tạo, vật lý do MMU chuyển đổi
+c. Vật lý là địa chỉ ảo
+d. Vật lý do mã người dùng tạo ra
+Thành phần nào quyết định quyền vào vùng tới hạn?
+a. Hệ thống file
+b. Bộ lập lịch
+c. Stack pointer
+d. Semaphore
+Tương hỗ loại trừ được hệ điều hành đảm bảo bằng cách nào?
+a. Dùng TLB
+b. Bằng thay đổi bảng trang
+c. Bằng mutex hoặc semaphore
+d. Bằng thu hồi CPU
+Trong bộ nhớ ảo, vùng chưa cấp phát được gọi là gì?
+a. Stack
+b. Segment
+c. Heap
+d. Lỗ (hole)
+Aging trong lập lịch có mục đích gì?
+a. Ngăn deadlock
+b. Tăng sử dụng bộ nhớ
+c. Giảm starvation
+d. Tăng tốc độ chuyển ngữ cảnh
+Mục tiêu chính của bảo vệ bộ nhớ trong hệ điều hành là gì?
+a. Bảo vệ ổ cứng
+b. Ngăn truy cập trái phép vùng nhớ
+c. Tối ưu thiết bị I/O
+d. Ẩn module kernel
+Trong phân trang theo yêu cầu, điều gì kích hoạt việc nạp trang?
+a. Lỗi trang
+b. Ngắt
+c. Loại bỏ trang
+d. Bộ định thời
+Trong hệ thống phân trang, địa chỉ logic được dịch sang địa chỉ vật lý bằng cách nào?
+a. Bằng tối ưu trình biên dịch
+b. Dùng bảng trang
+c. Qua trình điều khiển thiết bị
+d. Do tiến trình tự thực hiện
+Vùng bộ nhớ nào lưu biến toàn cục?
+a. Đoạn dữ liệu
+b. TLB
+c. Heap
+d. Stack
+Nguyên nhân chính của segmentation fault là gì?
+a. Tạo thread sai cách
+b. Truy cập đến driver thiết bị
+c. Đọc file chưa mở
+d. Ghi vào vùng bộ nhớ không cấp phát
+Thuật toán Banker's chỉ cấp phát tài nguyên khi nào?
+a. Khi không ảnh hưởng đến tiến trình khác
+b. Khi hệ thống vẫn ở trạng thái an toàn
+c. Khi tài nguyên còn dư
+d. Khi tiến trình yêu cầu lại
+Bài toán Readers-Writers yêu cầu điều kiện gì?
+a. Reader và writer chạy song song
+b. Writer phải độc quyền
+c. Không cần đồng bộ
+d. Chỉ cho phép reader
+Kỹ thuật nào sau đây hỗ trợ chống starvation trong lập lịch ưu tiên?
+a. Aging
+b. Semaphore
+c. FIFO
+d. SJF
+Khi nào một khung trang được đánh dấu là rảnh?
+a. Sau khi được đọc
+b. Sau khi trúng TLB
+c. Sau khi bị khóa
+d. Sau khi tiến trình kết thúc
+Khi dùng phân trang, kích thước bảng trang bị ảnh hưởng bởi?
+a. Số lượng file
+b. Kích thước trang
+c. Kích thước RAM
+d. Loại ổ cứng
+Điều kiện nào có thể loại bỏ bằng kỹ thuật yêu cầu tài nguyên toàn phần?
+a. Mutual exclusion
+b. No preemption
+c. Circular wait
+d. Hold and wait
+Làm sao để giảm thrashing?
+a. Dùng cấp phát stack
+b. Áp dụng mô hình tập làm việc (working set)
+c. Cố định quantum
+d. Tăng TLB
+Điểm khác biệt chính giữa tiến trình và luồng là gì?
+a. Luồng chia sẻ bộ nhớ trong cùng tiến trình
+b. Luồng không có ID riêng
+c. Luồng không có bộ đệm
+d. Tiến trình không được cấp CPU
+Kiểu cấp phát bộ nhớ nào có thể gây ra phân mảnh ngoài?
+a. Khối kích thước cố định
+b. Phân trang
+c. Stack
+d. Phân đoạn
+Chính sách cấp phát khung trang quyết định điều gì?
+a. Tiến trình nào chạy tiếp
+b. Số đoạn trên mỗi trang
+c. Trang nào bị thay thế
+d. Số khung trang cấp cho mỗi tiến trình
+Hệ điều hành phát hiện deadlock bằng cách nào?
+a. Đếm chu kỳ CPU
+b. Sử dụng đồ thị chờ
+c. Phân tích mức sử dụng bộ nhớ
+d. Theo dõi cache miss
+Chiến lược lập lịch nào dùng nhiều hàng đợi và chuyển tiến trình giữa các hàng?
+a. Multilevel Feedback Queue
+b. Round Robin
+c. FCFS
+d. SJF
+Mô hình tập làm việc (working set) nhằm giảm điều gì?
+a. Phân mảnh
+b. Đọc đĩa
+c. TLB miss
+d. Page fault
+Điều gì xảy ra khi hai tiến trình cùng đợi nhau giải phóng tài nguyên?
+a. Starvation
+b. Deadlock
+c. Paging
+d. Thrashing
+Một tiến trình bị "starvation" khi nào?
+a. Chờ I/O nhưng I/O không khả dụng
+b. Không có quyền đọc ghi file
+c. Ghi vào bộ nhớ read-only
+d. Không được cấp CPU vì ưu tiên thấp
+Kỹ thuật nào kết hợp cả phân đoạn và phân trang?
+a. Bảng ảo
+b. I/O khối
+c. Phân đoạn có phân trang
+d. TLB
+Thuật toán nào phân bổ một thời gian cố định cho mỗi tiến trình theo vòng?
+a. Round Robin
+b. SJF
+c. FCFS
+d. Ưu tiên
+Trong mô hình Readers-Writers, điều gì cần ưu tiên?
+a. Cho phép nhiều reader đồng thời
+b. Cho phép writer ghi bất cứ lúc nào
+c. Không có reader nào được phép đọc
+d. Writer phải ghi theo thứ tự reader
+Làm sao để tránh chờ vòng trong deadlock?
+a. Yêu cầu tiến trình cấp tất cả tài nguyên cùng lúc
+b. Cho phép truy cập dùng chung
+c. Gán độ ưu tiên cho tiến trình
+d. Sắp xếp tài nguyên theo thứ tự tuyến tính
+Cơ chế nào dùng trong giải thuật thay thế trang Clock?
+a. Bit ngắt
+b. Bit dirty
+c. Bit tham chiếu
+d. Counter thời gian
+Địa chỉ ảo được ánh xạ sang bộ nhớ vật lý bằng cách nào trong phân trang?
+a. Dùng hàm băm
+b. Ngắt I/O
+c. Danh sách liên kết
+d. Qua bảng trang
+Điểm khác biệt giữa lập lịch có thu hồi và không thu hồi là gì?
+a. Không thu hồi dùng fork()
+b. Có thu hồi không cần context switch
+c. Có thu hồi cho phép gián đoạn tiến trình đang chạy
+d. Không thu hồi dùng bộ nhớ
+Starvation trong quản lý bộ nhớ xảy ra khi nào?
+a. Tiến trình chờ bộ nhớ quá lâu
+b. Phân mảnh bộ nhớ
+c. Tiến trình thường xuyên bị swap
+d. Tiến trình không giải phóng bộ nhớ
+Bất lợi chính của lập lịch không có thu hồi là gì?
+a. Bỏ qua hoàn toàn độ ưu tiên.
+b. Tiến trình dài có thể ngăn chặn tiến trình ngắn.
+c. Không xử lý được tiến trình I/O.
+d. Gây ra quá nhiều chuyển ngữ cảnh.
+Bảo đảm "chờ có giới hạn" trong xử lý vùng tới hạn nghĩa là gì?
+a. Mỗi tiến trình cuối cùng cũng được vào
+b. Cho phép chờ vô hạn
+c. Không có loại trừ
+d. Luôn có 2 tiến trình chờ
+Tương hỗ loại trừ (mutual exclusion) trong bài toán vùng tới hạn đảm bảo điều gì?
+a. Mọi tiến trình đều có thể đọc dữ liệu dùng chung.
+b. Chỉ một tiến trình được truy cập tài nguyên dùng chung tại một thời điểm.
+c. Các tiến trình phải đợi hết thời gian định sẵn.
+d. Luôn có một tiến trình chờ.
+Trong hệ thống phân đoạn, mỗi đoạn có gì?
+a. Độ dài cố định
+b. Bảng trang
+c. Bộ đệm cache
+d. Địa chỉ cơ sở và giới hạn
+TLB (Bộ đệm ánh xạ nhanh) dùng để làm gì?
+a. Tăng dung lượng RAM
+b. Lưu thông tin đăng nhập
+c. Lưu bộ nhớ tạm bảng trang để truy cập nhanh
+d. Điều khiển I/O đĩa
+Nhược điểm của thuật toán thay thế trang FIFO là gì?
+a. Theo dõi phức tạp
+b. Tăng tỉ lệ trúng
+c. Ngăn thrashing
+d. Loại bỏ cả những trang đang dùng
+Thành phần phần cứng nào cần thiết cho phân trang?
+a. MMU (Memory Management Unit)
+b. Driver thiết bị
+c. Quản lý cache
+d. Bộ lập lịch đĩa
+Chức năng chính của MMU là gì?
+a. Chuyển đổi địa chỉ ảo thành địa chỉ vật lý
+b. Ghi nhận mức sử dụng CPU
+c. Kiểm soát lỗi I/O
+d. Tạo tín hiệu điều khiển thiết bị
+Trang lỗi (page fault) xảy ra khi nào?
+a. CPU quá nhiệt
+b. Truy cập dữ liệu trong kernel mode
+c. Hết dung lượng đĩa
+d. Truy cập trang chưa có trong bộ nhớ vật lý
+Ngắt (interrupt) phần cứng được dùng để?
+a. Tăng tốc bộ nhớ
+b. Dừng hệ thống
+c. Báo hiệu sự kiện từ thiết bị ngoại vi đến CPU
+d. Chia sẻ vùng nhớ
+Vai trò của bảng trang trong quản lý bộ nhớ là gì?
+a. Theo dõi lập lịch CPU
+b. Ánh xạ địa chỉ ảo sang khung vật lý
+c. Lưu trữ PCB
+d. Quản lý truy cập tệp
+Cơ chế nào được sử dụng để quản lý truy cập tài nguyên dùng chung?
+a. Semaphore
+b. Trình xử lý ngắt
+c. Stack pointer
+d. File descriptor
+Spinlock có đặc điểm gì?
+a. Dùng trong lập lịch đĩa
+b. Chặn tiến trình bằng I/O
+c. Tiết kiệm CPU khi chờ
+d. Gây tiêu tốn CPU khi chờ
+Bài toán vùng tới hạn cần đảm bảo gì?
+a. Bộ nhớ giới hạn
+b. Chỉ một tiến trình vào vùng tới hạn tại một thời điểm
+c. Vòng lặp vô hạn
+d. Xóa cache
+Mục tiêu chính của lập lịch CPU là gì?
+a. Tải tiến trình từ đĩa vào bộ nhớ.
+b. Quản lý cách chia sẻ bộ nhớ giữa các tiến trình.
+c. Điều khiển truyền thông I/O.
+d. Phân phối thời gian CPU cho các tiến trình trong hàng đợi sẵn sàng.
+Điều kiện deadlock nào có thể bị phá vỡ bằng thu hồi tài nguyên?
+a. Tương hỗ loại trừ
+b. Giữ và chờ
+c. Cả 4 điều kiện
+d. Chờ vòng
+Cách tránh deadlock trong bài toán triết gia ăn tối là?
+a. Dùng phân trang
+b. Chỉ cho 4 người ngồi cùng lúc
+c. Giới hạn thời gian ăn
+d. Thêm đũa
+Vấn đề đồng bộ nào kinh điển nhất trong hệ điều hành?
+a. Thay thế trang
+b. Producer - Consumer
+c. Thuật toán Banker
+d. Phân trang
+Mục tiêu chính của lập lịch hàng đợi đa mức là gì?
+a. Chia đều CPU cho tất cả tiến trình.
+b. Nhóm tiến trình theo hành vi hoặc độ ưu tiên.
+c. Loại bỏ nhu cầu dùng bộ phân phối.
+d. Tránh sử dụng cơ chế lão hóa (aging).
+Khi nào Round Robin trở nên không công bằng?
+a. Ít tiến trình
+b. CPU burst dài
+c. Độ ưu tiên cố định
+d. Quantum quá nhỏ
+Hệ điều hành xử lý lỗi trang như thế nào?
+a. Nạp trang từ đĩa
+b. Ngắt hệ thống
+c. Xóa TLB
+d. Diệt tiến trình
+Mỗi mục trong bảng trang chứa gì?
+a. Địa chỉ khung vật lý và bit trạng thái
+b. Địa chỉ logic
+c. Kích thước trang
+d. ID tiến trình
+Copy-on-write hoạt động như thế nào?
+a. Cha và con chia sẻ bộ nhớ cho đến khi có thay đổi
+b. Các trang chia sẻ đều ở chế độ chỉ đọc
+c. Tiến trình con sao chép toàn bộ bộ nhớ ngay
+d. Sao chép toàn bộ dữ liệu khi khởi tạo tiến trình
+Trạng thái "zombie" xảy ra khi nào?
+a. Tiến trình bị swap liên tục
+b. Tiến trình bị lỗi logic
+c. Tiến trình con kết thúc, nhưng chưa được tiến trình cha thu dọn
+d. Tiến trình không có vùng nhớ riêng
+Cơ chế đồng bộ nào cho phép gửi tín hiệu giữa các tiến trình?
+a. Wait()
+b. Mutex
+c. Fork
+d. Signal()
+Làm sao để tăng tỉ lệ trúng TLB?
+a. Tăng context switch
+b. Tăng lỗi trang
+c. Tăng mục TLB và tận dụng tính địa phương
+d. Giảm số đoạn
+Vì sao thread mức người dùng nhẹ hơn?
+a. Chuyển đổi không cần gọi hệ thống
+b. Chỉ chạy trong BIOS
+c. Chặn toàn bộ tiến trình
+d. Cần chạy ở kernel mode
+Kỹ thuật bộ nhớ nào tránh phân mảnh nội?
+a. Phân đoạn
+b. Phân trang
+c. Phân vùng động
+d. Cấp phát liên tục
+Giải pháp nào giúp tránh deadlock trong hệ thống tài nguyên giới hạn?
+a. Ngắt tiến trình khi cần
+b. Dùng signal thay cho mutex
+c. Không sử dụng vùng nhớ ảo
+d. Cấp phát tài nguyên theo thứ tự định sẵn
+Kích thước trang trong phân trang thường được xác định bởi?
+a. Dung lượng bộ nhớ ảo
+b. Tốc độ CPU
+c. Phần cứng
+d. Số tiến trình đang chạy
